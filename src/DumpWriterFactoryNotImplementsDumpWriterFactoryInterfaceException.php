@@ -1,11 +1,11 @@
 <?php
 
-namespace Imponeer\ProjectComposerCacheBasedRegistratorPluginBase;
+namespace Imponeer\ProjectCachedCodeGeneratorFromComposerJSONDataBase;
 
 /**
  * Class thrown when not correctly defined DumpWriterFactory class is supplied
  *
- * @package Imponeer\ProjectComposerCacheBasedRegistratorPluginBase
+ * @package Imponeer\ProjectCachedCodeGeneratorFromComposerJSONDataBase
  */
 class DumpWriterFactoryNotImplementsDumpWriterFactoryInterfaceException extends \Exception
 {

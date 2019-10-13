@@ -1,6 +1,6 @@
 <?php
 
-namespace Imponeer\ProjectComposerCacheBasedRegistratorPluginBase;
+namespace Imponeer\ProjectCachedCodeGeneratorFromComposerJSONDataBase;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;
@@ -10,7 +10,7 @@ use Composer\Plugin\PluginInterface;
 /**
  * Plugin class use for base of composer plugins
  *
- * @package Imponeer\ProjectComposerCacheBasedRegistratorPluginBase
+ * @package Imponeer\ProjectCachedCodeGeneratorFromComposerJSONDataBase
  */
 abstract class ComposerPlugin implements PluginInterface, EventSubscriberInterface
 {

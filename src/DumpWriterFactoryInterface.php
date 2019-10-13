@@ -1,11 +1,11 @@
 <?php
 
-namespace Imponeer\ProjectComposerCacheBasedRegistratorPluginBase;
+namespace Imponeer\ProjectCachedCodeGeneratorFromComposerJSONDataBase;
 
 /**
  * Interface that is used to create DumpWriterFactory classes
  *
- * @package Imponeer\ProjectComposerCacheBasedRegistratorPluginBase
+ * @package Imponeer\ProjectCachedCodeGeneratorFromComposerJSONDataBase
  */
 interface DumpWriterFactoryInterface
 {
