@@ -12,7 +12,7 @@ interface DumpWriterFactoryInterface
     /**
      * Add config
      *
-     * @param string $extra Extra part of config
+     * @param array[] $extra Extra part of config
      */
-    public function addConfig(array $extra);
+    public function addConfig(array $extra): void;
 }

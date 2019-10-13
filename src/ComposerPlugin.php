@@ -55,7 +55,7 @@ abstract class ComposerPlugin implements PluginInterface, EventSubscriberInterfa
      *
      * This method actual will create dump cache
      */
-    public function afterAutoloadDump()
+    public function afterAutoloadDump(): void
     {
         $dumpWriterClass = $this->getDumpWriterClass();
         require_once realpath(__DIR__ . '/../../../' . "autoload.php");
@@ -96,26 +96,26 @@ abstract class ComposerPlugin implements PluginInterface, EventSubscriberInterfa
      *
      * @return string
      */
-    protected abstract function getDumpWriterClass();
+    protected abstract function getDumpWriterClass(): string;
 
     /**
      * Get message when can't create dump writer instance
      *
      * @return string
      */
-    protected abstract function getCannotCreateDumpWriterInstanceMessage();
+    protected abstract function getCannotCreateDumpWriterInstanceMessage(): string;
 
     /**
      * Get message when updating cache
      *
      * @return string
      */
-    protected abstract function getUpdatingCacheMessage();
+    protected abstract function getUpdatingCacheMessage(): string;
 
     /**
      * Get message when can't write cache file
      *
      * @return string
      */
-    protected abstract function getFailToWriteDumpMessage();
+    protected abstract function getFailToWriteDumpMessage(): string;
 }

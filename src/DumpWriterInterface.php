@@ -15,12 +15,12 @@ interface DumpWriterInterface
      *
      * @param string $filename Filename to write
      */
-    public function __construct($filename);
+    public function __construct(string $filename);
 
     /**
      * Write existing service configuration to file
      *
      * @return bool
      */
-    public function writeToFile();
+    public function writeToFile(): bool;
 }
