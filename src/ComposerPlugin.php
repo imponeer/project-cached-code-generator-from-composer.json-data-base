@@ -57,9 +57,9 @@ abstract class ComposerPlugin implements PluginInterface, EventSubscriberInterfa
      */
     public function afterAutoloadDump(): void
     {
-        $dumpWriterClass = $this->getDumpWriterClass();
+        $dumpWriterFactoryClass = $this->getDumpWriterFactoryClass();
         require_once realpath(__DIR__ . '/../../../' . "autoload.php");
-        $factory = new $dumpWriterClass();
+        $factory = new $dumpWriterFactoryClass();
         if (!($factory instanceof DumpWriterFactoryInterface)) {
             throw new DumpWriterFactoryNotImplementsDumpWriterFactoryInterfaceException();
         }
@@ -92,11 +92,11 @@ abstract class ComposerPlugin implements PluginInterface, EventSubscriberInterfa
     }
 
     /**
-     * Gets dump writer class
+     * Gets dump writer factory class
      *
      * @return string
      */
-    protected abstract function getDumpWriterClass(): string;
+    protected abstract function getDumpWriterFactoryClass(): string;
 
     /**
      * Get message when can't create dump writer instance
