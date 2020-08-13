@@ -20,5 +20,6 @@
     "psr-4": {
       "Imponeer\\ProjectCachedCodeGeneratorFromComposerJSONDataBase\\": "src/"
     }
-  }
+  },
+  "abandoned": true
 }
